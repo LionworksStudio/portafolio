@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ignacio Joaquín Acuña</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">        
+</head>
+
+<body>
+    <div class="grid">
+        <header>
+            <div class="logo">
+              <img src="img/logo.png" alt="Logo de la empresa">
+            </div>
+            <nav>
+                <div class="menu-hamburguesa">
+                  <span class="icono-hamburguesa">&#9776;</span>
+                </div>
+                <ul class="menu">
+                  <li><a href="#inicio">Inicio</a></li>
+                  <li><a href="#sobre-mi">Sobre mi</a></li>
+                  <li class="dropdown">
+                    <a href="#servicios" class="dropbtn">Servicios</a>
+                    <div class="dropdown-content">
+                      <a href="#servicio1">Juegos</a>
+                      <a href="#servicio2">Lionworks Studio</a>
+                      <a href="#servicio3">contratarme como programador</a>
+                    </div>
+                  </li>
+                  <li><a href="#contacto">Contacto</a></li>
+                </ul>
+              </nav>         
+          </header>
+         <!-- Sección de Presentación -->
+  <section id="inicio" class="inicio">
+    <div class="contenedor-presentacion">
+      <h1>¡Hola! Soy Ignacio J. Acuña</h1>
+      <p>Desarrollador web | Diseñador | Programador de videos juegos</p>
+      <a href="#proyectos" class="btn">Ver mis proyectos</a>
+    </div>
+  </section>
+
+  <!-- Sección Sobre Mí -->
+  <section id="sobre-mi" class="sobre-mi">
+    
+    <h2>Sobre Mí</h2>
+    <p>
+      Hola soy ignacio Joaquín Acuña, tengo 16 años y soy un desarrollador de sitios web y de videos juegos, que acabo de empezar en la industria. Me especializo en la programación de paginas web, tanto con JavaScript y CSS, y la programación de videos juegos en plataforma como game maker, Unreal engine y Unity. Cree mi marca personal llamada Lionworks Studio o LWS con el objectivo de crear una identidad que reflejara mis valores y habilidades, al mismo tiempo que me permitiera conectar de manera efectiva con las personas. Sabía que para dar a conocer mis proyectos de forma profesional, necesitaba una plataforma sólida que transmitiera coherencia y profesionalismo. 
+    </p>
+  </section>
+
+  <!-- Sección de Proyectos -->
+  <section id="proyectos" class="proyectos">
+    <h2>Proyectos Destacados</h2>
+    <div class="contenedor-proyectos">
+      <!-- Proyecto 1 -->
+      <div class="proyecto">
+        <h3>Proyecto 1</h3>
+        <img src="img/game2.jpg" alt="Proyecto 1">
+        <p>Este fue un juego de plataforma tipo mario bros hecho en Scratch</p>
+        <a href="#" class="btn">Ver más</a>
+      </div>
+      
+      <!-- Proyecto 2 -->
+      <div class="proyecto">
+        <h3>Proyecto 2</h3>
+        <img src="img/diseño1.jpeg" alt="Proyecto 2">
+        <p>Pagina web hecha en canva sobre el circuito productivo de la yerba mate</p>
+        <a href="https://teccellstreaming.my.canva.site/ignacio-acu-a" class="btn">Ver más</a>
+      </div>
+    </div>
+  </section>
+  <section id="formación" class="formación">
+    <div class="container">
+        <h2>Formación Académica</h2>
+    
+        <div class="section">
+            <h3>Educación Institucional</h3>
+    
+            <div class="institution">
+                <h4><a href="https://sites.google.com/view/tecnica1nsdv/?fbclid=IwY2xjawFeoxRleHRuA2FlbQIxMAABHUOM_ETDRW0aFeYnuHFM0Ao7kPN1CyrXcqt3Q7girZnzfhv5S9dy0RBj5g_aem_CyPXBlAOGjQgRSJkMoipEQ" >Técnica de Muñiz - EEST Nº1 de San Miguel</a></h4>
+                <p>Ubicación: Buenos Aires, Argentina</p>
+                <p>Titulo: Tecnico informatico</p>
+                <p>Años de estudio: desde 2019.</p>
+                <p>Estudió en una escuela tecnica que me prepara para ser tecnico informatico</p>
+            </div>
+            <div class="section">
+                <h3>Educación digital</h3>
+            <div class="institution">
+                <h4><a href="https://www.udemy.com/" target="_blank">Academia Udemy</a></h4>
+                <p>Ubicación: Virtual</p>
+                <p>Titulo: Diseño grafico</p>
+                <p>Años de estudio: 2023</p>
+                <p>Curso de diseño grafico gratuito que hice durante el 2023.</p>
+            </div>
+            <a href="img/Currículum Vitae Cv de Administración Simple Azul.pdf" class="download-btn" onclick="downloadCV()">Descargar CV</a>
+        </div>
+        </div>
+    
+  </section>
+
+  <!-- Sección de Habilidades -->
+  <section id="habilidades" class="habilidades">
+    <h2>Habilidades</h2>
+    <div class="contenedor-habilidades">
+      <div class="habilidad">
+        <h3>HTML / CSS</h3>
+      </div>
+      <div class="habilidad">
+        <h3>JavaScript</h3>
+      </div>
+      <div class="habilidad">
+        <h3>Diseño Gráfico</h3>
+      </div>
+      <!-- Añadir más habilidades -->
+    </div>
+  </section>
+
+  <!-- Sección de Contacto -->
+  <section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <p>Si te interesa colaborar o necesitas más información, ¡no dudes en contactarme!</p>
+    <form action="enviar_mensaje.php" method="post">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo" required>
+      <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Ignacio Joaquín Acuña. Todos los derechos reservados.</p>
+  </footer>
+
+    </div>
+
+
+    <script>
+        // Seleccionamos el ícono de hamburguesa y el menú
+        const hamburguesa = document.querySelector('.icono-hamburguesa');
+        const menu = document.querySelector('.menu');
+      
+        // Añadimos un evento para mostrar/ocultar el menú al hacer clic en la hamburguesa
+        hamburguesa.addEventListener('click', () => {
+          menu.classList.toggle('menu-activo');
+        });
+      </script>           
+    <script src="js/main.js"></script>   
+</body>
+
+</html>
